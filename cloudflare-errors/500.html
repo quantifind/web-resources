@@ -1,31 +1,58 @@
 <html>
-  <head></head>
+  <head>
+    <title>Quantifind</title>
+  </head>
   <style>
     body {
-      position: relative;
-      background-color: #005476;
+      background-image: url("https://s3.amazonaws.com/prod-fenix-images/Client+Brand+Assets/Quantifind+Image+Files/quantifind-error-background.png");
+      background-size: cover;
+      background-position: center;
       text-align: center;
       font-family: 'Proxima Nova';
-      font-weight: 100;
-      font-size: 48px;
-      line-height: 58px;
+      font-feature-settings: 'liga' off, 'clig' off;
+      margin: 0;
+    }
+    @media (max-width: 1440px) and (max-height: 1024px) {
+      body {
+        background-size: auto;
+      }
     }
     #position-box {
       height: 30%;
     }
-    #line-1 {
-      margin-top: 50px;
-      color: white;
+    .title {
+      margin-top: 67px;
+      color: #43484A;
+      font-size: 34px;
+      line-height: 36px;
+      font-weight: 700;
     }
-    #line-2 {
-      color: #33BBF1;
+    .subtitle {
+      margin-top: 32px;
+      color: #0E161A;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+    a {
+      color: #006E9A;
+      font-weight: 700;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: none;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font;
     }
     </style>
   <body>
     <div id="position-box"></div>
-    <img src="https://s3.amazonaws.com/prod-fenix-images/Client+Brand+Assets/Quantifind+Image+Files/Q-Logo.png" alt="Quantfind Logo">
-    <div id="line-1">Signum is down for maintenance.</div>
-    <div id="line-2">We'll be back soon.</div>
+    <img src="https://s3.amazonaws.com/prod-fenix-images/Client+Brand+Assets/Quantifind+Image+Files/quantifind-logo.png" alt="Quantfind Logo">
+    <div class="title">Quantifind is temporarily unavailable.</div>
+    <div class="subtitle">
+      <div>We're currently experiencing a service interruption and are working to restore full access as quickly as possible.</div>
+      <div>Please check back soon. If you need immediate assistance, contact <a href="mailto:support@quantifind.com">support@quantifind.com</a></div>
+    </div>
     <!-- <p hidden>::CLOUDFLARE_ERROR_500S_BOX::</p> -->
   </body>
 </html>
